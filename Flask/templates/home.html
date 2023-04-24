@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>User Data</title>
+	</head>
+	<body>
+		<h1>User Management Data</h1>
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>FIRST_NAME</th>
+				<th>LAST_NAME</th>
+				<th>EMAIL_ID</th>
+				<th>AVATAR</th>
+			</tr>
+			{% for data in datas %}
+				<tr>
+					<td>{{data.id}}</td>
+					<td>{{data.first_name}}</td>
+					<td>{{data.last_name}}</td>
+					<td>{{data.email}}</td>
+					<td>{{data.avatar}}</td>
+				</tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>
